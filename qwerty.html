@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology</title>
+
+```
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+
+    /* HEADER */
+
+    header {
+        background-color: #151515;
+        padding: 20px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        color: white;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 25px;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #00bfff;
+    }
+
+    /* MAIN */
+
+    .main {
+        height: 450px;
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("https://images.unsplash.com/photo-1518770660439-4636190af475") center/cover;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+
+    .main h1 {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+
+    .main p {
+        font-size: 19px;
+        margin-bottom: 25px;
+    }
+
+    .button {
+        display: inline-block;
+        background-color: #00bfff;
+        color: white;
+        padding: 13px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+
+    .button:hover {
+        background-color: #0088cc;
+        transform: scale(1.05);
+    }
+
+    /* CARDS */
+
+    .container {
+        padding: 60px 8%;
+    }
+
+    .container h2 {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 25px;
+    }
+
+    .card {
+        background-color: white;
+        width: 33.33%;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+    }
+
+    .card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .card-content h3 {
+        margin-bottom: 12px;
+        font-size: 22px;
+    }
+
+    .card-content p {
+        color: #666;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    /* FOOTER */
+
+    footer {
+        background-color: #151515;
+        color: white;
+        text-align: center;
+        padding: 25px;
+    }
+
+    /* ADAPTIVE */
+
+    @media (max-width: 768px) {
+
+        header {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        nav a {
+            margin: 0 7px;
+            font-size: 14px;
+        }
+
+        .main h1 {
+            font-size: 30px;
+        }
+
+        .cards {
+            flex-direction: column;
+        }
+
+        .card {
+            width: 100%;
+        }
+
+    }
+
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<header>
+
+    <div class="logo">TECHNOLOGY</div>
+
+    <nav>
+        <a href="#">Головна</a>
+        <a href="#about">Про нас</a>
+        <a href="#products">Технології</a>
+        <a href="#contacts">Контакти</a>
+    </nav>
+
+</header>
+
+
+<section class="main">
+
+    <div>
+
+        <h1>Майбутнє починається сьогодні</h1>
+
+        <p>Відкривай світ сучасних технологій разом з нами</p>
+
+        <a href="#products" class="button">Дізнатися більше</a>
+
+    </div>
+
+</section>
+
+
+<section class="container" id="products">
+
+    <h2>Наші технології</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Комп'ютерні технології">
+
+            <div class="card-content">
+
+                <h3>Комп'ютери</h3>
+
+                <p>Сучасні комп'ютери допомагають працювати, навчатися та створювати нові можливості.</p>
+
+                <a href="#" class="button">Детальніше</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Командна робота">
+
+            <div class="card-content">
+
+                <h3>Інновації</h3>
+
+                <p>Нові технології змінюють наш світ та відкривають неймовірні перспективи.</p>
+
+                <a href="#" class="button">Детальніше</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Сучасні технології">
+
+            <div class="card-content">
+
+                <h3>Розробка</h3>
+
+                <p>Програмування дозволяє створювати сайти, програми та цифрові продукти.</p>
+
+                <a href="#" class="button">Детальніше</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer id="contacts">
+
+    <p>© 2026 TECHNOLOGY. Усі права захищені.</p>
+
+</footer>
+```
+
+</body>
+</html>
